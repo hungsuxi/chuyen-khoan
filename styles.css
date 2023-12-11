@@ -25,6 +25,7 @@ margin-left: 10px;
 
 input,
 textarea,
+
 select,
 button {
     font-family: inherit;
@@ -486,7 +487,7 @@ p .work-item__desck{
 .work-item {
     margin: 0 auto;
     padding: 10px;
-    max-width: 350px;
+    max-width: 386px;
     border: 16px solid #eaf6ff;
     border-radius: 4px;
     transition: 0.25s;
