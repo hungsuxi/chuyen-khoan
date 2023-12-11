@@ -22,6 +22,9 @@ body {
 a {
     text-decoration: none;
 }
+div .namngang input{
+margin-left: 10px;
+}
 
 input,
 textarea,
@@ -48,9 +51,55 @@ img{
     border-radius: 10px;
 
 }
+.anhdaidien img{
+    width: 168px;
+    height: 168px;
+    border-radius: 999%;
+
+}
+.anhdaidien .loader{
+    position: absolute;
+    margin-left: 160px;
+}
+.anhdaidien p{
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 90px;
+
+}
+.anhdaidien p:hover{
+    opacity: 0.9;
+    cursor: pointer;
+
+}
+.anhdaidien::after{
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    color: #96740d;
+    z-index: 1;
+}
+ img.face{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-top: 130px;
+}
+.anhdaidien{
+    position: relative;
+    display: flex;
+    margin-right: 80px;
+    justify-content: center;
+   
+}
+p .work-item__desck{
+    display: inline-block;
+}
+
+
 .container {
-    width: 1170px;
-    max-width: calc(100% - 48px);
+    display: block;
+    
     margin: 0 auto;
 }
 
@@ -78,11 +127,19 @@ img{
 
 .section-heading {
     font-weight: 600;
-    font-size: 5rem;
-    line-height: 1.2;
+    font-size: 4rem;
+    
     letter-spacing: -0.02em;
     color: #10375c;
 }
+.section-heading::after{
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    color: #96740d;
+    width: 50px;
+}
+
 
 .section-desc {
     margin-top: 18px;
@@ -381,15 +438,51 @@ img{
     line-height: 1.75;
     color: #575f66;
 }
+.loader {
+    display: block;
+    --height-of-loader: 4px;
+    --loader-color: #0071e2;
+    width: 130px;
+    height: var(--height-of-loader);
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0.2);
+    position: relative;
+  }
+  
+  .loader::before {
+    content: "";
+    position: absolute;
+    background: var(--loader-color);
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 30px;
+    animation: moving 1s ease-in-out infinite;
+    ;
+  }
+  
+  @keyframes moving {
+    50% {
+      width: 100%;
+    }
+  
+    100% {
+      width: 0;
+      right: 0;
+      left: unset;
+    }
+  }
 
 /* Work */
 .work {
     padding: 1px 0;
     background: #f7fbff;
-    margin: 0 auto;
+    
 }
 
-.work__desc {
+.work__desc,.work__desck {
+    color: #10375C;
     width: 468px;
 }
 
@@ -401,7 +494,9 @@ img{
 }
 
 .work-item {
-    padding: 1px;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 350px;
     border: 16px solid #eaf6ff;
     border-radius: 4px;
     transition: 0.25s;
