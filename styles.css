@@ -4,6 +4,7 @@
 
 :root {
     --header-bg: #10375c;
+
 }
 
 html {
@@ -23,11 +24,11 @@ a {
 
 div .namngang input{
 margin-left: 10px;
-width: 140px;
 }
 
 input,
 textarea,
+
 select,
 button {
     font-family: inherit;
@@ -491,7 +492,7 @@ p .work-item__desck{
 .work-item {
     margin: 0 auto;
     padding: 10px;
-    max-width: 400px;
+    max-width: 350px;
     border: 16px solid #eaf6ff;
     border-radius: 4px;
     transition: 0.25s;
