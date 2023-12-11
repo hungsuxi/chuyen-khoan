@@ -14,16 +14,16 @@ body {
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
 }
-.avatar{
-    width: 168px;
-    height: 168px;
-}
+
 /* Common */
 a {
     text-decoration: none;
 }
+
+
 div .namngang input{
 margin-left: 10px;
+width: 140px;
 }
 
 input,
@@ -131,13 +131,6 @@ p .work-item__desck{
     
     letter-spacing: -0.02em;
     color: #10375c;
-}
-.section-heading::after{
-    content: "";
-    display: inline-block;
-    border-radius: 50%;
-    color: #96740d;
-    width: 50px;
 }
 
 
@@ -478,6 +471,8 @@ p .work-item__desck{
 .work {
     padding: 1px 0;
     background: #f7fbff;
+    display: inline-block;
+    width: 400px;
     
 }
 
@@ -496,7 +491,7 @@ p .work-item__desck{
 .work-item {
     margin: 0 auto;
     padding: 10px;
-    max-width: 350px;
+    max-width: 400px;
     border: 16px solid #eaf6ff;
     border-radius: 4px;
     transition: 0.25s;
