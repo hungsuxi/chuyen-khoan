@@ -14,10 +14,7 @@ body {
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
 }
-.avatar{
-    width: 168px;
-    height: 168px;
-}
+
 /* Common */
 a {
     text-decoration: none;
@@ -131,13 +128,6 @@ p .work-item__desck{
     
     letter-spacing: -0.02em;
     color: #10375c;
-}
-.section-heading::after{
-    content: "";
-    display: inline-block;
-    border-radius: 50%;
-    color: #96740d;
-    width: 50px;
 }
 
 
