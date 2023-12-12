@@ -24,7 +24,12 @@ a {
 
 div.namngang input{
 margin-left: 10px;
+<<<<<<< HEAD
 width: 140px;
+=======
+width: 135px;
+
+>>>>>>> 13f8585aec3139f5a2808807fbd9955944cb694e
 }
 
 input,
