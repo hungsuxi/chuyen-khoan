@@ -22,8 +22,9 @@ a {
 }
 
 
-div .namngang input{
+div.namngang input{
 margin-left: 10px;
+width: 140px;
 }
 
 input,
@@ -52,6 +53,10 @@ img{
     border-radius: 10px;
 
 }
+.anhdaidien .vongtron{
+    border: #0071e2 solid 2px;
+    opacity: 90%;
+}
 .anhdaidien img{
     width: 168px;
     height: 168px;
@@ -60,7 +65,7 @@ img{
 }
 .anhdaidien .loader{
     position: absolute;
-    margin-left: 160px;
+    margin-left: 20px;
 }
 .anhdaidien p{
     position: absolute;
@@ -479,7 +484,7 @@ p .work-item__desck{
 
 .work__desc,.work__desck {
     color: #10375C;
-    width: 468px;
+    width: 180px;
 }
 
 .work__list {
@@ -488,7 +493,12 @@ p .work-item__desck{
     row-gap: 5px;
     margin-top: 20px;
 }
-
+.anhdaidien .dautich{
+    width: 10px;height: 10px;
+    position: absolute;
+    margin-top: 129px;
+    margin-left: 218px;
+}
 .work-item {
     margin: 0 auto;
     padding: 10px;
