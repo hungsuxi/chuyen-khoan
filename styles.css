@@ -14,12 +14,16 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
+    background-color:transparent ;
+  
 }
 
 /* Common */
 a {
     text-decoration: none;
 }
+
+
 
 
 div.namngang input{
@@ -51,6 +55,14 @@ button,input:hover{
     opacity: 0.9;
     cursor: pointer;
 }
+.tigia p{
+    margin-left: 200px;
+    margin-top: -50px;
+    padding-top: 30px;
+    font-weight: 600;
+
+   
+}
 img{
     display: block;
     width: 50px;
@@ -59,6 +71,21 @@ img{
     border-radius: 10px;
 
 }
+.tigia{
+    position: relative;
+}
+span #exchangeRate{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#clockDiv{
+    margin-right: 20px;
+    color: #10375c;
+}
+.anhdaidien{
+    margin-left: 50px;
+}
 .anhdaidien .vongtron{
     border: #0071e2 solid 2px;
 }
@@ -66,6 +93,8 @@ img{
     width: 168px;
     height: 168px;
     border-radius: 999%;
+    margin-left: 78px;
+    
 
 }
 .anhdaidien .loader{
@@ -74,7 +103,7 @@ img{
 }
 .anhdaidien p{
     position: absolute;
-    margin-left: 300px;
+    margin-left: 270px;
     margin-top: 90px;
 
 }
@@ -136,14 +165,33 @@ p .work-item__desck{
     cursor: pointer;
 }
 
+
+span{
+     font-weight: 600;
+     justify-content: end;
+     display: flex;
+    
+    margin-top: 10px;
+}
+
 .section-heading {
     font-weight: 600;
     font-size: 4rem;
-    
+    margin-top: 37px;
+    padding-bottom: 20px;
     letter-spacing: -0.02em;
     color: #10375c;
 }
-
+.section-heading::after{
+    content: "";
+    display: block;
+    position: relative;
+    margin-left: 80px;
+    width: 241px;
+    height: 4px;
+    background-color: #0071e2;
+    border-radius: 20px;
+}
 
 .section-desc {
     margin-top: 18px;
@@ -490,7 +538,14 @@ p .work-item__desck{
 .work__desc,.work__desck {
     color: #10375C;
     width: 180px;
-}
+    font-weight: 600;
+    /* color: transparent;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    -webkit-background-clip: text; */
+     color:#10375c  
+    
+    }
 
 .work__list {
     display: grid;
@@ -503,7 +558,7 @@ p .work-item__desck{
     height: 10px;
     position: absolute;
     margin-top: 129px;
-    margin-left: 218px;
+    margin-left: 19px;
 }
 .work-item {
     margin: 0 auto;
@@ -558,7 +613,12 @@ p .work-item__desck{
 .feature__media {
     width: 48%;
 }
-
+.nam{
+    display: grid;
+    grid-template-columns:20px 20px 20px;
+    column-gap: 20px;
+    margin-left: 20px;
+}
 .feature__images {
     position: relative;
     padding: 0 58px 121px 0;
@@ -888,9 +948,11 @@ p .work-item__desck{
 .footer__social-btn {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center ;
     width: 32px;
     height: 32px;
+    margin-top: 126px;
+    margin-left: -10px;
     border-radius: 50%;
     color: #2e80ce;
     background: #fff;
