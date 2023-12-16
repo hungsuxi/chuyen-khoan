@@ -39,6 +39,22 @@
           alert("Đã sao chép / 복사되었습니다!");
         }
     </script>
+    <script>
+function getExchangeRate() [
+fetch("https://api.exchangerate-api.com/v4/latest/KRW")
+then(response -=> response.json())
+then(data ->f
+// Lãy tỷ giá từ dữ liêu nhên duec
+const exchangeRate - data.rates.VND;
+// Hiến thi ty giá lên trang web
+document.getElementById("exchangeRate").textContent
+- catch(error-> f
+console.error("Đã xảy ra lõi khi lãy tý giá:", error):
+D:
+exchangeRate;
+J/ Gọi hàm đé lãy và hiến th4 ty giá khi trang dugc tái
+getExchangeRate();
+    </script>
 </head>
 <body>
     
