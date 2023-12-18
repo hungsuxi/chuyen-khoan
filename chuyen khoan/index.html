@@ -63,8 +63,14 @@
 
         <h2 class="section-heading">계좌이체 정보</h2>
         <div class="tigia">
-            <p>Tỷ giá từ KRW > VND:<span id="exchangeRate"></span>(Google) </p>
-        <p id="krw-vnd-rate"></p>
+            <div class="api">
+                <p>Tỷ giá từ KRW > VND</p>
+                <img src="../assets/icons/muiten.svg" alt="">
+                <span id="exchangeRate"></span>
+                <p id="krw-vnd-rate"></p>
+
+            </div>
+            
             <script>
               var xhr = new XMLHttpRequest();
               xhr.open("GET", "https://finance.naver.com/marketindex/exchangeDetail.nhn?marketindexCd=FX_VNDKRW");
@@ -104,7 +110,7 @@
         <!-- anh dai dien -->
         <div class="anhdaidien">
             
-            <img src="https://scontent-ssn1-1.xx.fbcdn.net/v/t39.30808-1/405203691_685787003643706_3998732228051535968_n.jpg?stp=dst-jpg_s200x200&_nc_cat=106&ccb=1-7&_nc_sid=5740b7&_nc_ohc=enLD7K9vTToAX8oYz0H&_nc_ht=scontent-ssn1-1.xx&oh=00_AfCAlR4OLGKKrAoM-GFNjDm248QMdn-jTazkqzoofrlFGg&oe=657A92A5"  alt="" class="vongtron" >
+            <img src="../assets/icons/anh dai dien.jpg"  alt="" class="vongtron" >
             
             <p class="section-desc work__desck">HO SI HUNG<br><i class="loader"></i> </p>
             <div class="nam">
@@ -129,7 +135,7 @@
                         />
                     </svg>
                 </a>
-                <a href="https://www.facebook.com/hhungsuxi/" class="footer__social-btn">
+                <a href="https://twitter.com/hoaytam" class="footer__social-btn">
                     <svg
                         width="16"
                         height="12"
@@ -143,7 +149,7 @@
                         />
                     </svg>
                 </a>
-                <a href="https://www.facebook.com/hhungsuxi/" class="footer__social-btn">
+                <a href="https://www.instagram.com/kr_siun/" class="footer__social-btn">
                     <svg
                         width="13"
                         height="12"
@@ -207,8 +213,11 @@
                 <div class="namngang" style="display: flex;justify-content: center;align-items: center">
                     
                     <p style="margin-left: -30px;">Click -></p>
+                    <a href="https://qr.kakaopay.com/Ej7qXRFe3"style="padding: 20px;">
+
+                        <img src="https://play-lh.googleusercontent.com/W43xj43ErMIs5BQgCdMKEa0NXCoUUW8DjQc5SxcDfLrC26H8sHDmoFIUWLYmsQahpo0" width="40px" height="40px" alt="kakaopay"/>
                     
-                    <img src="https://img.mservice.com.vn/app/img/portal_documents/mini-app_design-guideline_branding-guide-2-2.png" width="40px" height="40px" alt="kakaopay"/>
+                    </a>
             
                     
                 </div>
