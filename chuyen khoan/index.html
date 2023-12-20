@@ -1,264 +1,85 @@
-
-<html style=text-align:center;></html>
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="https://hohung.id.vn/assets/icons/anh.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
-    <title>시운 - 계좌이체 정보</title>
+  <meta property="og:image" content="https://hohung.id.vn/assets/icons/anh.png">
+    <title>시운 - 컴퓨터공학과</title>
     <link rel="icon" href="http://mail.seoultech.ac.kr/mail/img/favicon.png">
-    <link rel="stylesheet" href="./styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    
     <script src="./script.js"></script>
     
-
-    <script>
-        function copyText(id) {
-          // Lấy phần tử có ID tương ứng
-          var textElement = document.getElementById(id);
-          // Lấy nội dung của phần tử
-          var textContent = textElement.value;
-        
-          // Nối tất cả các văn bản lại với nhau
-          var textToCopy = textContent;
-        
-          // Tạo một phần tử textarea tạm thời để chứa văn bản cần sao chép
-          var tempElement = document.createElement("textarea");
-          tempElement.value = textToCopy;
-          document.body.appendChild(tempElement);
-        
-          // Chọn văn bản cần sao chép
-          tempElement.select();
-          document.execCommand("copy");
-          document.body.removeChild(tempElement);
-          
-          // Hiển thị hộp thoại để thông báo cho người dùng biết văn bản đã được sao chép thành công
-          alert("Đã sao chép / 복사되었습니다!");
-        }
-    </script>
 </head>
 <body>
-    <div class="boc">
+    <section>
         <div class="container hung ">
-            <header>
+                <header>
+                    <a href="./index.html" class="logo">HỒ HÙNG / 시운 </a>
+                    <ul>
+                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./project.html">Project</a></li>
+                        <li><a href="./chuyen khoan/index.html" >계좌이체</a></li>
+                    </ul>
+                </header>
+                <div class="content">
+                    <h2>Hello! i'm Hung</h2>
+                    <p>I am an information technology student studying and working in Korea. This is my personal website.</p>
+                    <a href="./chuyen khoan/index.html">GO</a>
+                </div>
+                <div class="imgBox">
+                        <img src="./assets/icons/anh.png" alt="" />
+                </div>
+                    <ul class="icon">
+                       
+                        <li><a href="https://www.facebook.com/hhungsuxi/"class="kickthuoc"><svg
+                            width="30"
+                            height="30"
+                            viewBox="0 0 6 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M3.98981 11.9358V6.0302H5.76473L6 3.9517H3.98981L3.9928 2.91132C3.9928 2.3692 4.0477 2.07885 4.87783 2.07885H5.98755V0H4.21224C2.07977 0 1.32931 1.00825 1.32931 2.70405V3.95186H0V6.03055H1.32931V11.8521C1.84718 11.9489 2.38257 12 2.93075 12C3.28487 12 3.63863 11.9786 3.98981 11.9358Z"
+                                fill="currentColor"
+                            />
+                        </svg></a></li>
+                        <li><a href="https://twitter.com/hoaytam"class="kickthuoc">
+                            <svg
+                            width="30"
+                            height="30"
+                            viewBox="0 0 16 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M16 1.42062C15.405 1.66154 14.771 1.82123 14.11 1.89877C14.79 1.524 15.309 0.935077 15.553 0.225231C14.919 0.574154 14.219 0.820615 13.473 0.958154C12.871 0.366462 12.013 0 11.077 0C9.261 0 7.799 1.36062 7.799 3.02862C7.799 3.26862 7.821 3.49938 7.875 3.71908C5.148 3.59631 2.735 2.38985 1.114 0.552C0.831 1.00523 0.665 1.524 0.665 2.08246C0.665 3.13108 1.25 4.06062 2.122 4.59877C1.595 4.58954 1.078 4.44831 0.64 4.22585C0.64 4.23508 0.64 4.24708 0.64 4.25908C0.64 5.73046 1.777 6.95262 3.268 7.23415C3.001 7.30154 2.71 7.33385 2.408 7.33385C2.198 7.33385 1.986 7.32277 1.787 7.28215C2.212 8.48123 3.418 9.36277 4.852 9.39138C3.736 10.1972 2.319 10.6828 0.785 10.6828C0.516 10.6828 0.258 10.6717 0 10.6412C1.453 11.5062 3.175 12 5.032 12C11.068 12 14.368 7.38462 14.368 3.384C14.368 3.25015 14.363 3.12092 14.356 2.99262C15.007 2.56615 15.554 2.03354 16 1.42062Z"
+                                fill="currentColor"
+                            />
+                        </svg></a></li>
+                        <li><a href="https://www.instagram.com/kr_siun/"class="kickthuoc"><svg
+                            width="30"
+                            height="30"
+                            viewBox="0 0 13 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M0 1.39394C0 0.989891 0.146401 0.656558 0.439189 0.393939C0.731978 0.131309 1.11262 0 1.58108 0C2.04119 0 2.41344 0.129285 2.69788 0.387879C2.99066 0.654545 3.13707 1.00201 3.13707 1.4303C3.13707 1.81818 2.99486 2.14141 2.71042 2.4C2.41764 2.66667 2.03282 2.8 1.55598 2.8H1.54344C1.08333 2.8 0.711072 2.66667 0.426641 2.4C0.142209 2.13333 0 1.79798 0 1.39394ZM0.163127 12V3.90303H2.94884V12H0.163127ZM4.49228 12H7.27799V7.47879C7.27799 7.19595 7.31146 6.97777 7.37838 6.82424C7.49549 6.54949 7.67326 6.31716 7.91168 6.12727C8.1501 5.93737 8.44916 5.84242 8.80888 5.84242C9.74582 5.84242 10.2143 6.45252 10.2143 7.67273V12H13V7.35758C13 6.16161 12.7072 5.25455 12.1216 4.63636C11.536 4.01818 10.7622 3.70909 9.80019 3.70909C8.72104 3.70909 7.88031 4.15758 7.27799 5.05455V5.07879H7.26544L7.27799 5.05455V3.90303H4.49228C4.509 4.16161 4.51737 4.96565 4.51737 6.31515C4.51737 7.66464 4.509 9.55959 4.49228 12Z"
+                                fill="currentColor"
+                            />
+                        </svg></a></li>
+                        </ul>
                 
-                <ul>
-                    <li><a href="../index.html" class="active">Home</a></li>
-                    <li><a href="../about.html">About</a></li>
-                    <li><a href="../project.html">Project</a></li>
-                    <li><a href="../chuyen khoan/index.html"class=" sau">계좌이체</a></li>
-                </ul>
-            </header>
-
-</div>
-
-
-<!-- Work -->
-<section class="work">
-    <div class="container">
-        
-
-        <h2 class="section-heading">계좌이체 정보</h2>
-        <div class="tigia">
-            <div class="api">
-                <p>Tỷ giá từ KRW > VND</p>
-                <img src="../assets/icons/muiten.svg" alt="">
-                <span id="exchangeRate"></span>
-                <p id="krw-vnd-rate"></p>
-
-            </div>
-            
-            <script>
-              var xhr = new XMLHttpRequest();
-              xhr.open("GET", "https://finance.naver.com/marketindex/exchangeDetail.nhn?marketindexCd=FX_VNDKRW");
-              xhr.onreadystatechange = function() {
-                  if (this.readyState === 4 && this.status === 200) {
-                      var responseText = this.responseText;
-                      var parser = new DOMParser();
-                      var htmlDoc = parser.parseFromString(responseText, "text/html");
-                      var exchangeRateElement = htmlDoc.querySelector(".rate_spot");
-                      var krw_vnd_rate = exchangeRateElement.textContent.trim();
-                      document.getElementById("krw-vnd-rate").textContent = "Tỉ giá KRW-VND: " + krw_vnd_rate;
-                  }
-              };
-              xhr.send();
-            </script>
-            <script>
-                function getExchangeRate() {
-                  fetch("https://api.exchangerate-api.com/v4/latest/KRW")
-                    .then(response => response.json())
-                    .then(data => {
-                      // Lấy tỷ giá từ dữ liệu nhận được
-                      const exchangeRate = data.rates.VND;
-            
-                      // Hiển thị tỷ giá lên trang web
-                      document.getElementById("exchangeRate").textContent = exchangeRate;
-                    })
-                    .catch(error => {
-                      console.error("Đã xảy ra lỗi khi lấy tỷ giá:", error);
-                    });
-                }
-            
-                // Gọi hàm để lấy và hiển thị tỷ giá khi trang được tải
-                getExchangeRate();
-              </script>
-        </div> 
-        </div>    
-        <!-- anh dai dien -->
-        <div class="anhdaidien">
-            
-            <img src="../assets/icons/anh dai dien.jpg"  alt="" class="vongtron" >
-            
-            <p class="section-desc work__desck">HO SI HUNG<br><i class="loader"></i> </p>
-            <div class="nam">
-                <!-- <div class="ko"><a href="https://www.facebook.com/hhungsuxi/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" alt="" class="face"></a><i class="fa-solid fa-heart-circle-plus"></i>
-                    <img src="./image/correct.png" alt="" class="dautich"></div>
-                <div class="kr">
-                    <a href="https://www.facebook.com/hhungsuxi/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" alt="" class="face"></a><i class="fa-solid fa-heart-circle-plus"></i>
-            <img src="./image/correct.png" alt="" class="dautich">
-
-                </div> -->
-                <a href="https://www.facebook.com/hhungsuxi/" class="footer__social-btn">
-                    <svg
-                        width="6"
-                        height="12"
-                        viewBox="0 0 6 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M3.98981 11.9358V6.0302H5.76473L6 3.9517H3.98981L3.9928 2.91132C3.9928 2.3692 4.0477 2.07885 4.87783 2.07885H5.98755V0H4.21224C2.07977 0 1.32931 1.00825 1.32931 2.70405V3.95186H0V6.03055H1.32931V11.8521C1.84718 11.9489 2.38257 12 2.93075 12C3.28487 12 3.63863 11.9786 3.98981 11.9358Z"
-                            fill="currentColor"
-                        />
-                    </svg>
-                </a>
-                <a href="https://twitter.com/hoaytam" class="footer__social-btn">
-                    <svg
-                        width="16"
-                        height="12"
-                        viewBox="0 0 16 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M16 1.42062C15.405 1.66154 14.771 1.82123 14.11 1.89877C14.79 1.524 15.309 0.935077 15.553 0.225231C14.919 0.574154 14.219 0.820615 13.473 0.958154C12.871 0.366462 12.013 0 11.077 0C9.261 0 7.799 1.36062 7.799 3.02862C7.799 3.26862 7.821 3.49938 7.875 3.71908C5.148 3.59631 2.735 2.38985 1.114 0.552C0.831 1.00523 0.665 1.524 0.665 2.08246C0.665 3.13108 1.25 4.06062 2.122 4.59877C1.595 4.58954 1.078 4.44831 0.64 4.22585C0.64 4.23508 0.64 4.24708 0.64 4.25908C0.64 5.73046 1.777 6.95262 3.268 7.23415C3.001 7.30154 2.71 7.33385 2.408 7.33385C2.198 7.33385 1.986 7.32277 1.787 7.28215C2.212 8.48123 3.418 9.36277 4.852 9.39138C3.736 10.1972 2.319 10.6828 0.785 10.6828C0.516 10.6828 0.258 10.6717 0 10.6412C1.453 11.5062 3.175 12 5.032 12C11.068 12 14.368 7.38462 14.368 3.384C14.368 3.25015 14.363 3.12092 14.356 2.99262C15.007 2.56615 15.554 2.03354 16 1.42062Z"
-                            fill="currentColor"
-                        />
-                    </svg>
-                </a>
-                <a href="https://www.instagram.com/kr_siun/" class="footer__social-btn">
-                    <svg
-                        width="13"
-                        height="12"
-                        viewBox="0 0 13 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M0 1.39394C0 0.989891 0.146401 0.656558 0.439189 0.393939C0.731978 0.131309 1.11262 0 1.58108 0C2.04119 0 2.41344 0.129285 2.69788 0.387879C2.99066 0.654545 3.13707 1.00201 3.13707 1.4303C3.13707 1.81818 2.99486 2.14141 2.71042 2.4C2.41764 2.66667 2.03282 2.8 1.55598 2.8H1.54344C1.08333 2.8 0.711072 2.66667 0.426641 2.4C0.142209 2.13333 0 1.79798 0 1.39394ZM0.163127 12V3.90303H2.94884V12H0.163127ZM4.49228 12H7.27799V7.47879C7.27799 7.19595 7.31146 6.97777 7.37838 6.82424C7.49549 6.54949 7.67326 6.31716 7.91168 6.12727C8.1501 5.93737 8.44916 5.84242 8.80888 5.84242C9.74582 5.84242 10.2143 6.45252 10.2143 7.67273V12H13V7.35758C13 6.16161 12.7072 5.25455 12.1216 4.63636C11.536 4.01818 10.7622 3.70909 9.80019 3.70909C8.72104 3.70909 7.88031 4.15758 7.27799 5.05455V5.07879H7.26544L7.27799 5.05455V3.90303H4.49228C4.509 4.16161 4.51737 4.96565 4.51737 6.31515C4.51737 7.66464 4.509 9.55959 4.49228 12Z"
-                            fill="currentColor"
-                        />
-                    </svg>
-                </a>
-            
-            </div>
-            
-            
-        </div>
-        <span id="clockDiv"></span>
-        <script language='javascript'>
-            var myVar=setInterval(function(){Clock()},1000);
-            function Clock() {
-            a=new Date();
-            w=Array("Chủ Nhật","Thứ hai","Thứ ba","Thứ tư","Thứ năm","Thứ sáu","Thứ bảy");
-            n=Array("일요일","월요일","화요일","수요일","목요일","금요일","토요일");
-            var a=n[a.getDay()],
-            n=new Date,
-            d=n.getDate();
-            m=n.getMonth()+1;
-            y=n.getFullYear();
-            h=n.getHours();
-            mi=n.getMinutes();
-            se=n.getSeconds();
-            if(10>d){d="0"+d}
-            if(10>m){m="0"+m}
-            if(10>h){h="0"+h}
-            if(10>mi){mi="0"+mi}
-            if(10>se){se="0"+se}
-            document.getElementById("clockDiv").innerHTML=""+a+ ","+m+"월 "+d+" 일 "+y+" ==> "+h+":"+mi+":"+se+"s";
-           }
-            </script>
-        
-
-        <div class="work__list">
-         <!-- Work item 1 -->
-        <section class="work-item">
-              
-                <h3 class="work-item__heading">토스뱅크</h3>
-                <div class="namngang" style="display: flex;justify-content: center; align-items: center;">
-                    <img src="https://dtd31o1ybbmk8.cloudfront.net/photos/aa5d8928e6d57a18650a30a69669decb/thumb.png" width="70px" height="40px" />
-                    <input type="text" value="100062799720" id="5">
-                    <button type="button" onclick="copyText('5')">Copy</button>
-                </div>
-                <h3 class="work-item__heading">농협은행</h3>
-                <div class="namngang" style="display: flex;justify-content: center;align-items: center">
-                    <img src="data:image/png;base64,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" width="40px" height="40px"/>
-                    <input type="text" value="3021367754851" id="3">
-                    <button type="button" onclick="copyText('3')">Copy</button>
-                </div>
-                <h3 class="work-item__heading">Kakao Pay</h3>
-                <div class="namngang" style="display: flex;justify-content: center;align-items: center">
-                    
-                    <p style="margin-left: -30px;">Click -></p>
-                    <a href="https://qr.kakaopay.com/Ej7qXRFe3"style="padding: 20px;">
-
-                        <img src="https://play-lh.googleusercontent.com/W43xj43ErMIs5BQgCdMKEa0NXCoUUW8DjQc5SxcDfLrC26H8sHDmoFIUWLYmsQahpo0" width="40px" height="40px" alt="kakaopay"/>
-                    
-                    </a>
-            
-                    
                 </div>
         </section>
-        <!-- Work item 2 -->
-        <div class="work-item">
-                <h3 class="work-item__heading">TECHCOMBANK</h3>
-                <div class="namngang" style="display: flex;justify-content: center;align-items: center">
-                    <img src="https://media.techcombank.com/uploads/logo_SEO_2ae7d33246.jpg" width="40px" height="40px"/>
-                    <input type="text" value="9801868888" id="7">
-                    <button type="button" onclick="copyText('7')">Copy</button></div>
-                <h3 class="work-item__heading">MB BANK</h3>
-                <div class="namngang" style="display: flex;justify-content: center;align-items: center">
-                <img src="https://cdn.tuoitre.vn/thumb_w/1200/471584752817336320/2023/2/23/62ce8018d5cacb6b28727421mb-bank-logo-1677142193380605336933.jpg" width="40px" height="40px"/>
-                <input type="text" value="177113981113" id="9">
-                <button type="button" onclick="copyText('9')">Copy</button></div>
-
-                 <h3 class="work-item__heading">Zalo Pay, MoMO</h3>
-                <div class="namngang" style="display: flex;justify-content: center;align-items: center">
-                    
-                    <p style="margin-left: -30px;">Click -></p>
-                    <a href="https://me.momo.vn/hungsuxi" style="padding: 20px;">
-
-                        <img src="https://img.mservice.com.vn/app/img/portal_documents/mini-app_design-guideline_branding-guide-2-2.png" width="40px" height="40px" alt="momo"/>
-                    
-                    </a>
-                    <a href="https://me.momo.vn/hungsuxi">
-
-                        <img src="https://vcci-hcm.org.vn/wp-content/uploads/2022/12/1.png" width="40px" height="40px" alt="momo"/>
-                    
-                    </a>
-                </div>
-        </div>
-        </section>
-
-        
-    </div>
-</section>
-    </div>
-   
-
+    
 </body>
 </html>
