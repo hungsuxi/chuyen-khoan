@@ -95,40 +95,26 @@
 
             </div>
             
-            <script>
-              var xhr = new XMLHttpRequest();
-              xhr.open("GET", "https://finance.naver.com/marketindex/exchangeDetail.nhn?marketindexCd=FX_VNDKRW");
-              xhr.onreadystatechange = function() {
-                  if (this.readyState === 4 && this.status === 200) {
-                      var responseText = this.responseText;
-                      var parser = new DOMParser();
-                      var htmlDoc = parser.parseFromString(responseText, "text/html");
-                      var exchangeRateElement = htmlDoc.querySelector(".rate_spot");
-                      var krw_vnd_rate = exchangeRateElement.textContent.trim();
-                      document.getElementById("krw-vnd-rate").textContent = "Tỉ giá KRW-VND: " + krw_vnd_rate;
-                  }
-              };
-              xhr.send();
-            </script>
-            <script>
-                function getExchangeRate() {
-                  fetch("https://api.exchangerate-api.com/v4/latest/KRW")
-                    .then(response => response.json())
-                    .then(data => {
-                      // Lấy tỷ giá từ dữ liệu nhận được
-                      const exchangeRate = data.rates.VND;
-            
-                      // Hiển thị tỷ giá lên trang web
-                      document.getElementById("exchangeRate").textContent = exchangeRate;
-                    })
-                    .catch(error => {
-                      console.error("Đã xảy ra lỗi khi lấy tỷ giá:", error);
-                    });
-                }
-            
-                // Gọi hàm để lấy và hiển thị tỷ giá khi trang được tải
-                getExchangeRate();
-              </script>
+           <script>
+    function getExchangeRate() {
+      fetch("https://api.exchangeratesapi.io/latest?base=KRW&symbols=VND")
+        .then(response => response.json())
+        .then(data => {
+          // Lấy tỷ giá từ dữ liệu nhận được
+          const exchangeRate = data.rates.VND;
+  
+          // Hiển thị tỷ giá lên trang web
+          document.getElementById("exchangeRate").textContent = "Tỉ giá KRW-VND: " + exchangeRate;
+        })
+        .catch(error => {
+          console.error("Đã xảy ra lỗi khi lấy tỷ giá:", error);
+        });
+    }
+  
+    // Gọi hàm để lấy và hiển thị tỷ giá khi trang được tải
+    getExchangeRate();
+</script>
+
         </div> 
         </div>    
         <!-- anh dai dien -->
