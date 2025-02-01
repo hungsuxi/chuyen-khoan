@@ -112,25 +112,24 @@
               xhr.send();
             </script>
             <script>
-    function getExchangeRate() {
-      fetch("https://www.freeforexapi.com/api/live?pairs=KRWVND")
-        .then(response => response.json())
-        .then(data => {
-          // Lấy tỷ giá từ dữ liệu nhận được
-          const exchangeRate = data.rates.KRWVND.rate;
-  
-          // Hiển thị tỷ giá lên trang web
-          document.getElementById("exchangeRate").textContent = "Tỉ giá KRW-VND: " + exchangeRate;
-        })
-        .catch(error => {
-          console.error("Đã xảy ra lỗi khi lấy tỷ giá:", error);
-        });
-    }
-  
-    // Gọi hàm để lấy và hiển thị tỷ giá khi trang được tải
-    getExchangeRate();
-</script>
-
+                function getExchangeRate() {
+                  fetch("https://api.exchangerate-api.com/v4/latest/KRW")
+                    .then(response => response.json())
+                    .then(data => {
+                      // Lấy tỷ giá từ dữ liệu nhận được
+                      const exchangeRate = data.rates.VND;
+            
+                      // Hiển thị tỷ giá lên trang web
+                      document.getElementById("exchangeRate").textContent = exchangeRate;
+                    })
+                    .catch(error => {
+                      console.error("Đã xảy ra lỗi khi lấy tỷ giá:", error);
+                    });
+                }
+            
+                // Gọi hàm để lấy và hiển thị tỷ giá khi trang được tải
+                getExchangeRate();
+              </script>
         </div> 
         </div>    
         <!-- anh dai dien -->
