@@ -1,209 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:image" content="https://hohung.id.vn/assets/icons/anh.png">
-    <link rel="stylesheet" href="./assets/css/project.css" />
-    <link rel="stylesheet" href="./chuyen khoan/styles.css" />
-  </head>
-  <body>
-    <div class="boc">
-        <div class="container hung ">
-            <header>
-                
-                <ul>
-                    <li><a href="./index.html" class="active">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="#!">Project</a></li>
-                    <li><a href="./chuyen khoan/index.html"class=" sau">계좌이체</a></li>
-                </ul>
-            </header>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xác nhận tình cảm</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #fce4ec;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      color: #d81b60;
+    }
+    .button-container {
+      margin-top: 20px;
+    }
+    .button {
+      font-size: 20px;
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .yes-button {
+      background-color: #4caf50;
+      color: white;
+      transition: all 0.3s ease-in-out;
+    }
+    .no-button {
+      background-color: #f44336;
+      color: white;
+    }
+    img {
+      margin-top: 20px;
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Em đồng ý làm bạn gái anh chứ?</h1>
+  
+  <div class="button-container">
+    <button class="button yes-button" id="yes-button" onclick="handleYes()">Có</button>
+    <button class="button no-button" onclick="handleNo()">Không</button>
+  </div>
 
-</div>
-    <div class="grid-wrapper">
-      <div class="tall">
-        <video controls 
-          src="./assets/icons/KakaoTalk_20240809_210315681.mp4"
-          alt=""
-        >
-        
-      </div>
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1588282322673-c31965a75c3e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1351&amp;q=80"
-          alt=""
-        />
-      </div>
-      <div class="tall">
-        <img
-          src="./assets/icons/12.jpg"
-          alt=""
-        />
-      </div>
-      <div class="tall">
-        <img
-          src="./assets/icons/anh dai dien.jpg"
-          alt=""
-        />
-      </div>
-      <div class="wide">
-        <img
-          src="https://images.unsplash.com/photo-1587588354456-ae376af71a25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          src=" https://images.unsplash.com/photo-1558980663-3685c1d673c4?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=60"
-          alt=""
-        />
-      </div>
-      <div class="tall">
-        <img
-          src="./assets/icons/a.jpg"
-          alt=""
-        />
-      </div>
-      <div class="big">
-        <img
-          src="https://images.unsplash.com/photo-1588492885706-b8917f06df77?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1588247866001-68fa8c438dd7?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=564&amp;q=80"
-          alt=""
-        />
-      </div>
-      <div class="wide">
-        <img
-          src="https://images.unsplash.com/photo-1586521995568-39abaa0c2311?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80"
-          alt=""
-        />
-      </div>
-      <div class="big">
-        <img
-          src="https://images.unsplash.com/photo-1572914857229-37bf6ee8101c?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80"
-          alt=""
-        />
-      </div>
-      <div class="tall">
-        <img
-          src="https://images.unsplash.com/photo-1588453862014-cd1a9ad06a12?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1588414734732-660b07304ddb?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=675&amp;q=80"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1588224575346-501f5880ef29?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=80"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1574798834926-b39501d8eda2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1547234935-80c7145ec969?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1353&amp;q=80"
-          alt=""
-        />
-      </div>
-      <div class="tall">
-        <img
-          src="https://scontent-ssn1-1.xx.fbcdn.net/v/t39.30808-6/475590663_945070164382054_2099567771572691549_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=669761&_nc_ohc=OvE2xk0To4EQ7kNvgHfUppO&_nc_zt=23&_nc_ht=scontent-ssn1-1.xx&_nc_gid=AEFZ-y882vh2tzcZILL862H&oh=00_AYAmyrusExiWjuh5KShvgPCFd8ddRmip3CHIudp4V37XQw&oe=67A3798B"
-          alt=""
+  <h2 id="message"></h2>
 
-        />
-      </div>
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1587732608058-5ccfedd3ea63?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1587897773780-fe72528d5081?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1489&amp;q=80"
-          alt=""
-        />
-      </div>
-      <div class="wide">
-        <img
-          src="https://images.unsplash.com/photo-1588083949404-c4f1ed1323b3?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1489&amp;q=80"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1587572236558-a3751c6d42c0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80"
-          alt=""
-        />
-      </div>
-      <div class="wide">
-        <img
-          src="https://images.unsplash.com/photo-1583542225715-473a32c9b0ef?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80"
-          alt=""
-        />
-      </div>
-      <div class="big">
-        <img
-          src="https://images.unsplash.com/photo-1527928159272-7d012024eb74?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1553984840-b8cbc34f5215?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1433446787703-42d5bf446876?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1351&amp;q=80"
-          alt=""
-        />
-      </div>
-      <div class="big">
-        <img
-          src="https://images.unsplash.com/photo-1541187714594-731deadcd16a?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=80"
-          alt=""
-        />
-      </div>
-      <div class="tall">
-        <img
-          src="https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1421930866250-aa0594cea05c?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1355&amp;q=80"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1493306454986-c8877a09cbeb?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1381&amp;q=80"
-          alt=""
-        />
-      </div>
-      <div class="wide">
-        <img
-          src="https://images.unsplash.com/photo-1536466528142-f752ae7bdd0c?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80"
-          alt=""
-        />
-      </div>
-    </div>
-  </body>
+  <img src="https://media1.tenor.com/m/qSXr3xGx4acAAAAC/no-cat.gif" alt="Hình mèo dễ thương" id="cat-image">
+
+  <script>
+    let noClickCount = 0;
+
+    function handleYes() {
+      alert("Yay! Anh biết mà ❤️");
+    }
+
+    function handleNo() {
+      const yesButton = document.getElementById("yes-button");
+      const message = document.getElementById("message");
+
+      noClickCount++;
+
+      switch (noClickCount) {
+        case 1:
+          yesButton.style.fontSize = "30px";
+          yesButton.style.padding = "15px 30px";
+          message.textContent = "Em có thực sự chắc chắn?";
+          break;
+
+        case 2:
+          yesButton.style.fontSize = "40px";
+          yesButton.style.padding = "20px 40px";
+          message.textContent = "Em khum đồng ý được à 😢";
+          break;
+
+        case 3:
+          yesButton.style.fontSize = "50px";
+          yesButton.style.padding = "25px 50px";
+          message.textContent = "Đồng ý đi màaaa 😭";
+          break;
+
+        case 4:
+          yesButton.style.fontSize = "60px";
+          yesButton.style.padding = "30px 60px";
+          message.textContent = "Em mà chọn không thì anh rất buồn đấy...";
+          break;
+
+        default:
+          message.textContent = "Thôi mà, bấm CÓ đi 😭";
+          break;
+      }
+    }
+  </script>
+</body>
 </html>
